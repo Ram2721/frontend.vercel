@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass {
+    @apply bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-20 shadow-xl;
+  }
+  
+  .glass-dark {
+    @apply bg-black bg-opacity-40 backdrop-blur-xl border border-white border-opacity-10 shadow-2xl;
+  }
+
+  .btn-premium {
+    @apply px-6 py-2 bg-gold text-black font-semibold rounded-full transform transition hover:scale-105 active:scale-95;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top right, #1a1a1a, #0a0a0a);
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
