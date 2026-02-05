@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Search, Plus, Trash2, Edit2, ShoppingBag, Gift, Info } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = '/api';
 
 const App = () => {
     const [recipes, setRecipes] = useState([]);
